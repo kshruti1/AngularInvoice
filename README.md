@@ -1,6 +1,8 @@
 # AngularInvoice
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.25.
+In this basic project we read xml file and display on HTML. You can download the code from [AngularInvoice](https://github.com/kshruti1/AngularInvoice).
+You will also find project steps to follow from scratch in the file [Project Guide](https://github.com/kshruti1/AngularInvoice/blob/master/ProjectGuide.docx).
 
 ## Development server
 
