@@ -1,21 +1,24 @@
  import { NgModule } from '@angular/core';
-    import { RouterModule, Routes } from '@angular/router';
-    import { DashboardComponent } from '../dashboard/dashboard.component'
+ import { RouterModule, Routes } from '@angular/router';
+ import { DashboardComponent } from '../dashboard/dashboard.component';
+ import { PieChartComponent } from '../pie-chart/pie-chart.component';
 
-    const routes: Routes = [
-        {
-            path: '',
-            component: DashboardComponent,
-        },
+ const routes: Routes = [
+        {path: '', component: DashboardComponent },
+        {path: 'Pie-Chart', component: PieChartComponent},
+        {path: '*', component: PieChartComponent}
     ];
 
-    @NgModule({
+ @NgModule({
         imports: [
-            RouterModule.forRoot(routes)
+            RouterModule.forRoot(routes),
+             // PieChartComponent
         ],
         exports: [
             RouterModule
         ],
-        declarations: []
+        declarations: [
+          //  PieChartComponent
+        ]
     })
     export class AppRoutingModule { }
