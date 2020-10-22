@@ -10,7 +10,7 @@ import { PieChartComponent } from './pie-chart.component';
   ],
   imports: [
     CommonModule,
-    PieChartComponent,
+    // PieChartComponent,
     ChartsModule
   ]
 })

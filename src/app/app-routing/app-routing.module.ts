@@ -11,14 +11,15 @@
 
  @NgModule({
         imports: [
-            RouterModule.forRoot(routes),
-             // PieChartComponent
+            RouterModule.forRoot(routes)
+             //PieChartComponent
         ],
         exports: [
             RouterModule
+            //PieChartComponent
         ],
         declarations: [
-          //  PieChartComponent
+            //PieChartComponent
         ]
     })
     export class AppRoutingModule { }

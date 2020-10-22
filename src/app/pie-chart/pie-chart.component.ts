@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { SingleDataSet, Label, monkeyPatchChartJsLegend, monkeyPatchChartJsTooltip } from 'ng2-charts';
+
 @Component({
   selector: 'app-pie-chart',
   templateUrl: './pie-chart.component.html',
@@ -13,10 +15,21 @@ export class PieChartComponent implements OnInit {
 
   public pieChartType = 'pie';
 
-  constructor() { }
+  public pieChartLegend = true;
 
-  ngOnInit() {
+  public pieChartPlugins = [];
+
+  constructor() {
+    monkeyPatchChartJsTooltip();
+    monkeyPatchChartJsLegend();
   }
 
+  ngOnInit() {
+     this.pieChartData = [120, 150, 180, 90];
+  }
+
+   onChartClick(event) {
+        console.log(event);
+    }
 }
 
